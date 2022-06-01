@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-#--------[ DEUS ]-----------#
+#--------[ @HeyBigBunney ]-----------#
 source ShellBot.sh
 touch lista
 [[ -z $1 ]] && {
@@ -26,50 +26,6 @@ menu() {
         msg+="<b>GERE SEU TESTE DE 2 HORAS GRÁTIS</b>\n"
         msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
         msg+="<b>🔴CLARO 🟣VIVO 🔵TIM⁽ᴮᴱᵀᴬ⁾</b>\n"
-        ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
-        --text "$(echo -e $msg)" \
-        --reply_markup "$keyboard1" \
-        --parse_mode html
-        return 0
-}
-
-# - Funcao pix
-PIX() {
-    local msg
-        msg="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="💠      ESCOLHA ABAIXO UMA CHAVE.     💠\n"
-        msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="🔁                 CHAVE ALEATORIA                   🔁\n"
-        msg+="🔑 ├ <code>d0bb6b96-cf72-4027-83c0-ea0b9d9b0b78</code>\n"
-        msg+="👤 ├ @HeyBigBunney\n"
-        msg+="💰 └ R$ 12,90 <strong>(POR TEMPO LIMITADO)</strong>\n"
-        msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="✅           CONFIRMAR PAGAMENTO           ✅\n"
-        msg+="ENVIE O COMPROVANTE P/ @HeyBigBunney\n"
-        msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="VERIFICAÇÃO DE PAGAMENTO EM ATÉ 24H\n"
-        ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
-        --text "$(echo -e $msg)" \
-        --reply_markup "$keyboard1" \
-        --parse_mode html
-        return 0
-}
-
-# - Funcao pix
-pix() {
-    local msg
-        msg="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="💠      ESCOLHA ABAIXO UMA CHAVE.     💠\n"
-        msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="🔁                 CHAVE ALEATORIA                   🔁\n"
-        msg+="🔑 ├ <code>d0bb6b96-cf72-4027-83c0-ea0b9d9b0b78</code>\n"
-        msg+="👤 ├ @HeyBigBunney\n"
-        msg+="💰 └ R$ 12,90 <strong>(POR TEMPO LIMITADO)</strong>\n"
-        msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="✅           CONFIRMAR PAGAMENTO           ✅\n"
-        msg+="ENVIE O COMPROVANTE PARA @HeyBigBunney\n"
-        msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="VERIFICAÇÃO DE PAGAMENTO EM ATÉ 24H\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
         --text "$(echo -e $msg)" \
         --reply_markup "$keyboard1" \
@@ -104,7 +60,7 @@ rm -rf /etc/SSHPlus/userteste/$usuario.sh" > /etc/SSHPlus/userteste/$usuario.sh
     echo ${callback_query_from_id} >> lista
     # - ENVIA O SSH
     ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
-    --text "$(echo -e "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n        ✅ Criado com sucesso ✅\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n            👤 USUARIO: <code>$usuario</code>\n               🔑 SENHA: <code>$senha</code>\n             ⏰ Expira em: $tempo Hora")\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n   ℹ️ COMO CONECTAR A INTERNET\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n• Abra o app que você instalou.\n• Selecione sua operadora.\n• Digite o usuário e a senha recebida no app.\n• Ligue dados móveis e Desligue Wi-fi\n• Clique em Conectar.\n• Deve aparecer Conexão Estabelecida.\n• Se apareceu, va ao youtube e faça o teste.\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n   ⚠️ SIGA EXATAMENTE COMO DIZ\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n  😍 GOSTOU? DIGITE OU CLIQUE EM /pix" \
+    --text "$(echo -e "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n        ✅ Criado com sucesso ✅\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n            👤 USUARIO: <code>$usuario</code>\n               🔑 SENHA: <code>$senha</code>\n             ⏰ Expira em: $tempo Hora")\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n   ℹ️ COMO CONECTAR A INTERNET\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n• Abra o app que você instalou.\n• Selecione sua operadora.\n• Digite o usuário e a senha recebida no app.\n• Ligue dados móveis e Desligue Wi-fi\n• Clique em Conectar.\n• Deve aparecer Conexão Estabelecida.\n• Se apareceu, va ao youtube e faça o teste.\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n   ⚠️ SIGA EXATAMENTE COMO DIZ\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬" \
     --parse_mode html
     return 0
 }
@@ -119,7 +75,7 @@ criarteste2() {
     usuario=$(echo teste$(( RANDOM% + 250 )))
     senha=$((RANDOM% + 99999))
     limite='1'
-    tempo='2'
+    tempo='1'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
     if sshpass -p "$senha_server2" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server2 echo "ok" 1>/dev/null 2>/dev/null; then
         sshpass -p "$senha_server2" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server2 << EOF
@@ -160,7 +116,7 @@ criarteste3() {
     usuario=$(echo teste$(( RANDOM% + 250 )))
     senha=$((RANDOM% + 99999))
     limite='1'
-    tempo='2'
+    tempo='1'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
     if sshpass -p "$senha_server3" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server3 echo "ok" 1>/dev/null 2>/dev/null; then
         sshpass -p "$senha_server3" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server3 << EOF
@@ -201,7 +157,6 @@ enviarapp() {
     
 }
 
-
 #informacoes usuario
 infouser () {
     ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
@@ -215,13 +170,10 @@ botao1=''
 ShellBot.InlineKeyboardButton --button 'botao1' --line 1 --text '♻️ GERAR LOGIN DE 2h ♻️' --callback_data 'gerarssh'
 ShellBot.InlineKeyboardButton --button 'botao1' --line 2 --text '🔰 BAIXAR APLICATIVO 🔰' --callback_data 'appenviar'
 ShellBot.InlineKeyboardButton --button 'botao1' --line 4 --text '🆘 SUPORTE 🆘' --callback_data '2' --url 't.me/HeyBigBunney' # LINK PV
-ShellBot.InlineKeyboardButton --button 'botao1' --line 4 --text '🏷️ ENVIAR COMPROVANTE 🏷️️' --callback_data '2' --url 't.me/HeyBigBunney' # LINK PV
 ShellBot.regHandleFunction --function criarteste --callback_data gerarssh
 ShellBot.regHandleFunction --function criarteste2 --callback_data gerarssh2
 ShellBot.regHandleFunction --function criarteste3 --callback_data gerarssh3
 ShellBot.regHandleFunction --function enviarapp --callback_data appenviar
-ShellBot.regHandleFunction --function enviarsks --callback_data sksenviar
-ShellBot.regHandleFunction --function enviarehi --callback_data ehienviar
 unset keyboard1
 keyboard1="$(ShellBot.InlineKeyboardMarkup -b 'botao1')"
 while :; do
