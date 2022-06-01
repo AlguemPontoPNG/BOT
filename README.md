@@ -1,6 +1,6 @@
 # 🤖 bot teste
 
- apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/alfainternet/botteste/main/Install)
+ apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/AlguemPontoPNG/BOT/main/Install)
 
 
 
