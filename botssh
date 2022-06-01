@@ -4,7 +4,7 @@ clear
 source ShellBot.sh
 touch lista
 [[ -z $1 ]] && {
-    clear && echo "INFORME O TOKEN" && return 0
+    clear && echo "INFORME O TOKEN DO BOT" && return 0
 }
 # Informações Server 2
 ip_server2="SEU-IP-AQUI"
