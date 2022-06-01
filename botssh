@@ -25,7 +25,7 @@ menu() {
         msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
         msg+="<b>GERE SEU TESTE DE 2 HORAS GRÁTIS</b>\n"
         msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="<b>🔴CLARO 🟣VIVO 🔵TIM⁽ᴮᴱᵀᴬ⁾</b>\n"
+        msg+="<b>🟣VIVO 🔴CLARO⁽ᴮᴱᵀᴬ⁾ 🔵TIM⁽ᴮᴱᵀᴬ⁾ 🟡OI⁽ᴮᴱᵀᴬ⁾</b>\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
         --text "$(echo -e $msg)" \
         --reply_markup "$keyboard1" \
@@ -75,7 +75,7 @@ criarteste2() {
     usuario=$(echo teste$(( RANDOM% + 250 )))
     senha=$((RANDOM% + 99999))
     limite='1'
-    tempo='1'
+    tempo='2'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
     if sshpass -p "$senha_server2" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server2 echo "ok" 1>/dev/null 2>/dev/null; then
         sshpass -p "$senha_server2" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server2 << EOF
@@ -116,7 +116,7 @@ criarteste3() {
     usuario=$(echo teste$(( RANDOM% + 250 )))
     senha=$((RANDOM% + 99999))
     limite='1'
-    tempo='1'
+    tempo='2'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
     if sshpass -p "$senha_server3" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server3 echo "ok" 1>/dev/null 2>/dev/null; then
         sshpass -p "$senha_server3" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server3 << EOF
@@ -169,6 +169,7 @@ unset botao1
 botao1=''
 ShellBot.InlineKeyboardButton --button 'botao1' --line 1 --text '♻️ GERAR LOGIN DE 2h ♻️' --callback_data 'gerarssh'
 ShellBot.InlineKeyboardButton --button 'botao1' --line 2 --text '🔰 BAIXAR APLICATIVO 🔰' --callback_data 'appenviar'
+ShellBot.InlineKeyboardButton --button 'botao1' --line 4 --text '✅ COMPRAR ✅' --callback_data '2' --url 't.me/HeyBigBunney' # LINK PV
 ShellBot.InlineKeyboardButton --button 'botao1' --line 4 --text '🆘 SUPORTE 🆘' --callback_data '2' --url 't.me/HeyBigBunney' # LINK PV
 ShellBot.regHandleFunction --function criarteste --callback_data gerarssh
 ShellBot.regHandleFunction --function criarteste2 --callback_data gerarssh2
