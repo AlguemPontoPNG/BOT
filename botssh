@@ -159,9 +159,9 @@ enviarapp() {
 
 #Plano
 verplanos() {
-ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
-    --text "$(echo -e "
-    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n         💠      INTERNET ILIMITADA.     💠\n    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n        ⏰ ┌ DURAÇÃO: 30 Dias                   🔁\n        📱 ├ ACESSE APLICATIVOS E SITES A VONTADE\n        💰 └ POR: R$ 21,90 \n    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n        ✅           CONTATO           ✅\n        👤 ├ COMPRAR OU DUVIDAS: @HeyBigBunney\n    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬" \
+    [[ $(grep -wc ${callback_query_from_id} lista) != '0' ]] && {
+      ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
+        --text "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n         💠      INTERNET ILIMITADA.     💠\n    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n        ⏰ ┌ DURAÇÃO: 30 Dias                   🔁\n        📱 ├ ACESSE APLICATIVOS E SITES A VONTADE\n        💰 └ POR: R$ 21,90 \n    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n        ✅           CONTATO           ✅\n        👤 ├ COMPRAR OU DUVIDAS: @HeyBigBunney\n    ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬" \
     --parse_mode html
     return 0
 }
