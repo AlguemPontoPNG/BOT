@@ -30,7 +30,7 @@ menu() {
         --text "$(echo -e $msg)" \
         --reply_markup "$keyboard1" \
         --parse_mode html
-    ShellBot.sendPhoto --chat_id ${callback_query_message_chat_id} \
+        ShellBot.sendPhoto --chat_id ${message_chat_id[$id]} \
         --document "@/root/imagem.jpg" \
         return 0
 }
