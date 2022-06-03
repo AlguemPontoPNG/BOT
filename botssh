@@ -31,7 +31,7 @@ menu() {
         --reply_markup "$keyboard1" \
         --parse_mode html
         ShellBot.sendPhoto --chat_id ${message_chat_id[$id]} \
-        --document "@/root/imagem.jpg" \
+        --photo "@/root/imagem.jpg" \
         return 0
 }
 
