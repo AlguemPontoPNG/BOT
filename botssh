@@ -42,7 +42,7 @@ criarteste() {
         --text "❌ Acesso negado, verifique o horário da sua última criação, e volte apenas quando completar 24 horas da sua última criação."
       return 0
     }
-    usuario=$(echo Honey-$(( RANDOM% + 999 )))
+    usuario=$(echo cloud-$(( RANDOM% + 999 )))
     senha=$((RANDOM% + 99999))
     limite='1'
     tempo='2'
