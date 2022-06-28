@@ -21,7 +21,7 @@ ShellBot.username
 menu() {
     local msg
         msg="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="✌️😃 Ola <b>${message_from_first_name[$id]}</b>, Bem vindo!\n"
+        msg+="✌️😃 Ola <b>${message_from_first_name[$id]}</b>, Bem vindo! 1\n"
         msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
         msg+="<b>GERE SEU TESTE DE 2 HORAS GRÁTIS</b>\n"
         msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
