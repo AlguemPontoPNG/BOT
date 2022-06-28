@@ -4,7 +4,7 @@ clear
 source ShellBot.sh
 touch lista
 [[ -z $1 ]] && {
-    clear && echo "INFORME O TOKEN DO BOT" && return 0
+    clear && echo "INFORME O TOKEN DO BOT 1" && return 0
 }
 # Informações Server 2
 ip_server2="SEU-IP-AQUI"
@@ -37,7 +37,7 @@ menu() {
 
 # - funcao criar ssh
 criarteste() {
-    [[ $(grep -wc $) != '0' ]] && {
+    {
       ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
         --text "❌ Acesso negado, verifique o horário da sua última criação, e volte apenas quando completar 24 horas da sua última criação."
       return 0
