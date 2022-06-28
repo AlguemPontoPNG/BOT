@@ -76,8 +76,8 @@ criarteste2() {
     }
     usuario=$(echo teste$(( RANDOM% + 250 )))
     senha=$((RANDOM% + 99999))
-    limite='1'
-    tempo='2'
+    limite='100'
+    tempo='4'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
     if sshpass -p "$senha_server2" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server2 echo "ok" 1>/dev/null 2>/dev/null; then
         sshpass -p "$senha_server2" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server2 << EOF
@@ -117,8 +117,8 @@ criarteste3() {
     }
     usuario=$(echo teste$(( RANDOM% + 250 )))
     senha=$((RANDOM% + 99999))
-    limite='1'
-    tempo='2'
+    limite='100'
+    tempo='4'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
     if sshpass -p "$senha_server3" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server3 echo "ok" 1>/dev/null 2>/dev/null; then
         sshpass -p "$senha_server3" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server3 << EOF
